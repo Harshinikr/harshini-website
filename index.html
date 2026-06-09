@@ -1765,17 +1765,6 @@ footer {
           <span class="modal-pill">SHAP explainability</span>
         </div>
 
-      <div id="car-pipeline" class="modal-tab-panel">
-        <div class="modal-desc">Device signals → Feature extraction → <strong>XGBoost</strong> availability classifier → if confidence &gt; threshold, reply directly; else forward to <strong>GPT-4o mini</strong> with structured context window.</div>
-        <div class="modal-highlights">
-          <div class="modal-highlights-title">Pipeline Steps</div>
-          <div class="modal-highlight-item">Signal collection: GPS, calendar, accelerometer, battery, notification state</div>
-          <div class="modal-highlight-item">Feature engineering: 33 derived features from raw sensor data streams</div>
-          <div class="modal-highlight-item">XGBoost: availability prediction with SHAP value explainability per decision</div>
-          <div class="modal-highlight-item">LLM fallback: GPT-4o mini with structured context prompt on low-confidence cases</div>
-        </div>
-      </div>
-
       <div id="car-infra" class="modal-tab-panel">
         <div class="modal-desc">Flask backend deployed on lightweight server. Android app communicates via REST. All ML inference runs server-side; <strong>personal data never leaves the device</strong> raw.</div>
         <div class="modal-highlights">
