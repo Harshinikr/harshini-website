@@ -4,20 +4,21 @@ It showcases my work, background, and technical strengths as a Software & ML Eng
 
 👩‍💻 About Me
 I’m a Software & ML Engineer focused on building cloud‑native, distributed, and production‑ready systems with clarity, reliability, and clean architecture.
-My work spans applied ML, explainable AI, serverless pipelines, and client‑facing engineering — all delivered in HIPAA/SOC‑2 regulated environments.
+My work spans applied ML, explainable AI, serverless pipelines, and client‑facing engineering — delivered in HIPAA/SOC‑2 regulated environments for Fortune 500 clients.
 
-🎓 MS Software Engineering @ Arizona State University (GPA 3.9)
+Highlights
+MS Software Engineering @ Arizona State University (GPA 3.9)
 
-🧠 Applied ML · Explainable AI (SHAP) · Hybrid ML+LLM Systems
+Applied ML · SHAP Explainability · Hybrid ML+LLM Systems
 
-☁️ Cloud‑Native Architecture · Serverless AWS · Terraform IaC
+Cloud‑Native Architecture · Serverless AWS · Terraform IaC
 
-🚀 Forward Deployed Engineering · End‑to‑End Delivery
+Forward Deployed Engineering · End‑to‑End Delivery
 
-📍 Phoenix, AZ — Open to Relocate
+Phoenix, AZ — Open to Relocate
 
-🌐 Website
-This website includes:
+🌐 Website Overview
+The website includes:
 
 Professional introduction
 
@@ -28,6 +29,8 @@ Featured AI/ML + cloud projects
 Experience and education
 
 Contact information
+
+Designed to be simple, fast, and easy to navigate — reflecting my engineering philosophy.
 
 🚀 Tech Used
 HTML
