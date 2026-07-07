@@ -1167,7 +1167,7 @@ footer {
     <li><a href="#experience">Experience</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#education">Education</a></li>
-    <li><a href="https://drive.google.com/file/d/1f5wnfIJpOfmJBxS0NoHLXQXa-4CrJ69Y/view" target="_blank">Resume</a></li>
+    <li><a href="https://drive.google.com/file/d/1nrJLJurD3AReTS35Weevjp-LTNOKivgq/view?usp=drive_link" target="_blank">Resume</a></li>
   </ul>
   <div class="nav-right">
     <button id="theme-btn" onclick="toggleTheme()" title="Toggle dark mode">🌙</button>
@@ -1186,7 +1186,7 @@ footer {
   <div class="hero-left">
     <div class="hero-eyebrow reveal">
       <span class="eyebrow-dot"></span>
-      Software Engineer · Backend Systems · Cloud & AI
+      Software & ML Engineer · Cloud & AI
     </div>
 
     <div class="hero-name reveal delay-1">
@@ -1195,14 +1195,14 @@ footer {
     </div>
 
     <div class="hero-sub reveal delay-2">
-      <span>Backend Engineer</span> · Cloud-Native Systems · <span>ML & AI</span>
+      <span>Software Engineer</span> · Cloud-Native Systems · <span>ML & AI</span>
     </div>
 
     <p class="hero-desc reveal delay-2">
-      I design and ship <strong>cloud-native systems</strong> that combine distributed architecture,
-      scalable APIs, and ML pipelines — serving <strong>50K+ users</strong> in
-      HIPAA-regulated environments with <strong>99.9% uptime</strong>.
-      Clean code, full ownership, zero prod breaks.
+      Software and ML Engineer with <strong>3.5+ years</strong> building scalable systems for
+      Fortune 500 healthcare and banking clients — <strong>Citibank, Cigna, Anthem</strong> — in
+      HIPAA and SOC-2 regulated environments. Currently building an end-to-end
+      <strong>fraud detection system</strong> with XGBoost, SHAP, and GPT-4o mini on AWS.
     </p>
 
     <div class="hero-btns reveal delay-3">
@@ -1215,7 +1215,7 @@ footer {
         See My Work →
       </a>
 
-      <a href="https://drive.google.com/file/d/1f5wnfIJpOfmJBxS0NoHLXQXa-4CrJ69Y/view"
+      <a href="https://drive.google.com/file/d/1nrJLJurD3AReTS35Weevjp-LTNOKivgq/view?usp=drive_link"
          target="_blank" class="btn btn-outline">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
@@ -1295,11 +1295,12 @@ footer {
 <div class="featured-project reveal" onclick="openModal('cloudclaim')" style="cursor:none;">
   <div class="feat-num">01 / Featured Project</div>
   <div class="feat-title">CloudClaim</div>
-  <p class="feat-desc">Serverless event-driven healthcare claims pipeline on AWS — fault-tolerant, zero data loss on 1,000+ simulated claims. Full Terraform IaC, GitHub Actions CI/CD, and CloudWatch observability. HIPAA-aligned with AES-256 encryption and IAM least-privilege.</p>
+  <p class="feat-desc">Serverless event-driven healthcare claims pipeline on AWS — fault-tolerant, zero data loss on 1,000+ simulated claims. Integrated ML fraud detection (Isolation Forest + XGBoost, ROC-AUC 0.86) on Kaggle's Healthcare Provider Fraud dataset, with SHAP generating plain-English audit reasons via a reviewer-facing UI. Full Terraform IaC, GitHub Actions CI/CD, and CloudWatch observability. HIPAA-aligned with AES-256 encryption and IAM least-privilege.</p>
   <div class="feat-tags">
     <span class="tag">Python</span><span class="tag">AWS Lambda</span><span class="tag">S3 · SQS · SNS</span>
     <span class="tag">DynamoDB</span><span class="tag">API Gateway</span><span class="tag">Terraform</span>
-    <span class="tag">GitHub Actions</span><span class="tag">CloudWatch</span>
+    <span class="tag">GitHub Actions</span><span class="tag">XGBoost</span><span class="tag">Isolation Forest</span>
+    <span class="tag">SHAP</span><span class="tag">OpenAI GPT-4o mini</span>
   </div>
   <a class="feat-link" href="#" onclick="event.preventDefault();openModal('cloudclaim')">View Project →</a>
 </div>
@@ -1308,25 +1309,14 @@ footer {
 <div class="featured-project reveal" onclick="openModal('car')" style="cursor:none;">
   <div class="feat-num">02 / Mobile · ML + LLM</div>
   <div class="feat-title">CAR — Contextual Auto-Response</div>
-  <p class="feat-desc">Real-time context engine reading 33+ device signals to predict availability and generate smart replies. Hybrid XGBoost + GPT-4o mini pipeline with sub-10s E2E latency across SMS, WhatsApp, and Messenger. All personal data stays on-device.</p>
+  <p class="feat-desc">Real-time context engine reading 33+ device signals to predict availability and generate smart replies. Hybrid XGBoost + GPT-4o mini pipeline with sub-10s E2E latency across SMS, WhatsApp, and Messenger. Privacy-preserving on-device Room (SQLite) storage — raw sensor data never leaves the device.</p>
   <div class="feat-tags">
-    <span class="tag">Python</span><span class="tag">Kotlin</span><span class="tag">XGBoost</span>
-    <span class="tag">SHAP</span><span class="tag">GPT-4o mini</span><span class="tag">Flask</span>
+    <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Kotlin</span><span class="tag">Android SDK</span>
+    <span class="tag">XGBoost</span><span class="tag">scikit-learn</span><span class="tag">SHAP</span><span class="tag">GPT-4o mini</span><span class="tag">Room (SQLite)</span>
   </div>
   <a class="feat-link" href="#" onclick="event.preventDefault();openModal('car')">View Project →</a>
 </div>
 
-<!-- Featured: MedNLP -->
-<div class="featured-project reveal" onclick="openModal('mednlp')" style="cursor:none;">
-  <div class="feat-num">03 / Clinical AI · In Dev</div>
-  <div class="feat-title">MedNLP — Clinical Notes Extraction</div>
-  <p class="feat-desc">Fine-tuned BioBERT extracts diagnoses, medications, procedures, and dosages from unstructured clinical notes. Claude API handles low-confidence edge cases with structured prompting. HIPAA-aligned with structured JSON output for EHR integration.</p>
-  <div class="feat-tags">
-    <span class="tag">Python</span><span class="tag">BioBERT</span><span class="tag">Claude API</span>
-    <span class="tag">FastAPI</span><span class="tag">GCP</span><span class="tag">BigQuery</span>
-  </div>
-  <a class="feat-link" href="#" onclick="event.preventDefault();openModal('mednlp')">View Project →</a>
-</div>
 
 
 <!-- ===== EXPERIENCE ===== -->
@@ -1342,7 +1332,7 @@ footer {
     </div>
     <div class="exp-right">
       <div class="exp-company">Citibank</div>
-      <div class="exp-role">Software Engineer — Backend & Cloud</div>
+      <div class="exp-role">Software Engineer — Virtusa · Citibank</div>
       <ul class="exp-bullets">
         <li>Designed 8+ Python/Flask microservices for a banking portal serving 50K+ MAU, maintaining 99.9% uptime via AWS EC2 autoscaling and SOC-2-compliant infrastructure — zero security incidents in 18 months.</li>
         <li>Reduced API latency ~35% through PostgreSQL query optimization, Redis caching, and connection pooling; drove 25% increase in user engagement with sub-200ms SLAs.</li>
@@ -1362,8 +1352,8 @@ footer {
       <div class="exp-location">📍 Chennai, India</div>
     </div>
     <div class="exp-right">
-      <div class="exp-company">Cigna</div>
-      <div class="exp-role">Associate Software Engineer, Backend</div>
+      <div class="exp-company">Cigna Healthcare</div>
+      <div class="exp-role">Associate Software Engineer — Virtusa · Cigna Healthcare</div>
       <ul class="exp-bullets">
         <li>Engineered Python backend services in a HIPAA-regulated environment processing 100K+ monthly member eligibility and provider transactions with field-level data security.</li>
         <li>Grew automated test coverage from 15% → 70% (Pytest), reducing production regression incidents ~40%.</li>
@@ -1378,42 +1368,21 @@ footer {
 
   <div class="exp-row reveal">
     <div class="exp-left">
-      <div class="exp-period">Aug 2021 – Jul 2022</div>
+      <div class="exp-period">Jan 2021 – Jul 2022</div>
       <div class="exp-badge">🔧 Assoc. SWE</div>
       <div class="exp-location">📍 Chennai, India</div>
     </div>
     <div class="exp-right">
       <div class="exp-company">Anthem</div>
-      <div class="exp-role">Associate Software Engineer</div>
+      <div class="exp-role">Associate Software Engineer — Virtusa · Anthem</div>
       <ul class="exp-bullets">
-        <li>Integrated REST APIs across 5+ insurance systems, cutting inter-system latency ~25% and response time ~30%.</li>
-        <li>Implemented Jenkins CI/CD pipelines reducing manual deployment 40% with PII security controls.</li>
-        <li>Migrated 2 legacy services to AWS (EC2, S3) through architecture reviews and production deployment.</li>
+        <li>Developed JavaScript frontend features and REST API integrations across 5+ insurance systems, reducing inter-system latency ~25% and response time ~30%.</li>
+        <li>Implemented Jenkins CI/CD pipelines reducing manual deployment by 40% with PII security controls.</li>
+        <li>Migrated 2 legacy services to AWS (EC2, S3).</li>
       </ul>
       <div class="exp-tech-row">
-        <span class="exp-tech">REST APIs</span><span class="exp-tech">Jenkins</span>
+        <span class="exp-tech">JavaScript</span><span class="exp-tech">REST APIs</span><span class="exp-tech">Jenkins</span>
         <span class="exp-tech">AWS EC2/S3</span><span class="exp-tech">PII Security</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="exp-row reveal">
-    <div class="exp-left">
-      <div class="exp-period">Jan 2021 – Jul 2021</div>
-      <div class="exp-badge">💻 SWE Intern</div>
-      <div class="exp-location">📍 Chennai, India</div>
-    </div>
-    <div class="exp-right">
-      <div class="exp-company">Virtusa</div>
-      <div class="exp-role">Software Engineer Intern</div>
-      <ul class="exp-bullets">
-        <li>Contributed to 2 production deployments in an Agile team from day one.</li>
-        <li>Gained hands-on Python backend, REST API design, and QA testing experience.</li>
-        <li>Wrote unit/integration tests using Pytest, supporting 85%+ coverage on assigned modules.</li>
-      </ul>
-      <div class="exp-tech-row">
-        <span class="exp-tech">Python</span><span class="exp-tech">REST APIs</span>
-        <span class="exp-tech">Pytest</span><span class="exp-tech">Agile</span>
       </div>
     </div>
   </div>
@@ -1425,24 +1394,26 @@ footer {
   <div class="section-title reveal delay-1">Not Just an <em>Engineer</em></div>
   <div class="about-grid">
     <div class="about-text reveal">
-      <p>I'm a <strong>Software Engineer</strong> with <strong>3.5+ years</strong> building production systems for <span class="hl">Citibank</span>, <span class="hl">Cigna</span>, and <span class="hl">Anthem</span> — where uptime and security aren't negotiable.</p>
-      <p>My work lives at the intersection of <strong>cloud infrastructure, backend APIs, and applied ML</strong>. I've shipped features serving <strong>50K+ monthly active users</strong> in HIPAA and SOC-2 regulated environments.</p>
-      <p>Currently finishing my <strong>MS in Software Engineering at ASU</strong> (GPA 3.9), where I've been deepening my applied ML knowledge — from fine-tuning BERT models for clinical NLP to building serverless AWS pipelines with full IaC coverage.</p>
+      <p>I'm a <strong>Software and ML Engineer</strong> with <strong>3.5+ years</strong> building scalable systems for Fortune 500 healthcare and banking clients — <span class="hl">Citibank</span>, <span class="hl">Cigna</span>, and <span class="hl">Anthem</span> — in HIPAA and SOC-2 regulated environments.</p>
+      <p>My work spans <strong>cloud infrastructure, Python services, and AI/ML pipelines</strong>. I'm currently building an end-to-end <strong>fraud detection system</strong> with XGBoost, SHAP, and GPT-4o mini on AWS.</p>
+      <p>I'm finishing my <strong>MS in Software Engineering at ASU</strong> (GPA 3.9, expected May 2026).</p>
       <p>I'm <strong>OPT eligible with STEM extension</strong>, available immediately, and open to relocating anywhere in the US for the right opportunity.</p>
     </div>
     <div class="skills-cloud reveal delay-1">
-      <span class="sk">Python</span><span class="sk">Java</span><span class="sk">SQL</span>
-      <span class="sk">TypeScript</span><span class="sk">Kotlin</span>
-      <span class="sk cloud">AWS Lambda</span><span class="sk cloud">S3</span>
-      <span class="sk cloud">DynamoDB</span><span class="sk cloud">Terraform</span>
-      <span class="sk cloud">Docker</span><span class="sk cloud">GitHub Actions</span>
-      <span class="sk">Flask</span><span class="sk">FastAPI</span>
-      <span class="sk">Spring Boot</span><span class="sk">PostgreSQL</span>
-      <span class="sk">Redis</span><span class="sk">MongoDB</span>
-      <span class="sk ai">Claude API</span><span class="sk ai">XGBoost</span>
-      <span class="sk ai">BioBERT</span><span class="sk ai">OpenAI API</span>
-      <span class="sk ai">LangChain</span><span class="sk ai">SHAP</span>
-      <span class="sk">HIPAA</span><span class="sk">SOC-2</span><span class="sk">Agile</span>
+      <span class="sk">Python</span><span class="sk">Java</span><span class="sk">JavaScript</span>
+      <span class="sk">SQL</span><span class="sk">Kotlin</span>
+      <span class="sk">Flask</span><span class="sk">FastAPI</span><span class="sk">Node.js</span>
+      <span class="sk">REST APIs</span><span class="sk">Spring Boot</span><span class="sk">Swagger/OpenAPI</span>
+      <span class="sk cloud">AWS EC2</span><span class="sk cloud">S3</span><span class="sk cloud">RDS</span>
+      <span class="sk cloud">Lambda</span><span class="sk cloud">VPC</span><span class="sk cloud">IAM</span>
+      <span class="sk cloud">CloudWatch</span><span class="sk cloud">API Gateway</span><span class="sk cloud">Terraform</span>
+      <span class="sk cloud">Docker</span><span class="sk cloud">GitHub</span><span class="sk cloud">Jenkins</span><span class="sk cloud">Linux</span>
+      <span class="sk">PostgreSQL</span><span class="sk">MySQL</span><span class="sk">MongoDB</span>
+      <span class="sk">Redis</span><span class="sk">DynamoDB</span><span class="sk">Room (SQLite)</span>
+      <span class="sk ai">OpenAI API</span><span class="sk ai">XGBoost</span><span class="sk ai">Isolation Forest</span>
+      <span class="sk ai">scikit-learn</span><span class="sk ai">SHAP</span><span class="sk ai">Prompt Engineering</span>
+      <span class="sk ai">Pandas</span><span class="sk ai">NumPy</span><span class="sk ai">Pytest</span><span class="sk ai">JUnit</span>
+      <span class="sk">Agile/Scrum</span><span class="sk">HIPAA-Regulated Environments</span>
     </div>
   </div>
 </section>
@@ -1461,8 +1432,8 @@ footer {
     <div class="edu-card reveal delay-1">
       <div class="edu-icon">🎓</div>
       <div class="edu-degree">B.Tech. Information Technology</div>
-      <div class="edu-school">Sri Krishna College of Engineering · Coimbatore</div>
-      <div class="edu-gpa">First Class with Distinction · 2016 – 2020</div>
+      <div class="edu-school">Sri Krishna College of Engineering and Technology · Coimbatore, India</div>
+      <div class="edu-gpa">2016 – 2020</div>
     </div>
     <div class="edu-card reveal delay-2">
       <div class="edu-icon">☁️</div>
@@ -1597,6 +1568,7 @@ footer {
       <div class="modal-tabs">
         <button class="modal-tab active" onclick="switchTab(this,'cc-overview')">Overview</button>
         <button class="modal-tab" onclick="switchTab(this,'cc-arch')">Architecture</button>
+        <button class="modal-tab" onclick="switchTab(this,'cc-ml')">ML Fraud Detection</button>
         <button class="modal-tab" onclick="switchTab(this,'cc-infra')">Infrastructure</button>
       </div>
 
@@ -1630,6 +1602,18 @@ footer {
         </div>
       </div>
 
+      <div id="cc-ml" class="modal-tab-panel">
+        <div class="modal-desc">Integrated ML fraud detection on <strong>Kaggle's Healthcare Provider Fraud dataset</strong>. Trained an <strong>Isolation Forest + XGBoost</strong> ensemble achieving <strong>ROC-AUC of 0.86</strong>, with SHAP generating plain-English audit reasons per flagged claim via a reviewer-facing UI.</div>
+        <div class="modal-highlights">
+          <div class="modal-highlights-title">Fraud Detection Pipeline</div>
+          <div class="modal-highlight-item">Isolation Forest for unsupervised anomaly detection, paired with XGBoost for supervised classification</div>
+          <div class="modal-highlight-item">ROC-AUC of 0.86 on Kaggle's Healthcare Provider Fraud dataset</div>
+          <div class="modal-highlight-item">SHAP-generated, plain-English audit reasons attached to every flagged claim</div>
+          <div class="modal-highlight-item">Model-scoring Lambda deployed with versioned S3 artifacts, automated retraining, and drift monitoring</div>
+          <div class="modal-highlight-item">Reviewer-facing UI surfaces flagged claims with explainable audit trails for compliance</div>
+        </div>
+      </div>
+
       <div id="cc-infra" class="modal-tab-panel">
         <div class="modal-desc">Fully provisioned via <strong>Terraform</strong> with GitHub Actions CI/CD. CloudWatch monitors all Lambda functions with custom dashboards, metric alarms, and structured log groups per service.</div>
         <div class="modal-highlights">
@@ -1650,6 +1634,11 @@ footer {
         <span class="modal-tech">Terraform</span>
         <span class="modal-tech">GitHub Actions</span>
         <span class="modal-tech">CloudWatch</span>
+        <span class="modal-tech">XGBoost</span>
+        <span class="modal-tech">Isolation Forest</span>
+        <span class="modal-tech">scikit-learn</span>
+        <span class="modal-tech">SHAP</span>
+        <span class="modal-tech">OpenAI GPT-4o mini</span>
       </div>
       <a href="https://github.com/Harshinikr" target="_blank" class="gh-link">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -1756,7 +1745,7 @@ footer {
       </div>
 
       <div id="car-overview" class="modal-tab-panel active">
-        <div class="modal-desc">Real-time context engine reading <strong>33+ device signals</strong> to predict availability and generate smart replies. Hybrid XGBoost + GPT-4o mini pipeline with <strong>sub-10s end-to-end latency</strong> across SMS, WhatsApp, and Messenger. All personal data stays on-device.</div>
+        <div class="modal-desc">Real-time context engine reading <strong>33+ device signals</strong> (GPS, accelerometer, calendar, Wi-Fi, battery) via native Android APIs, delivering <strong>sub-10s end-to-end latency</strong> from message receipt to autoreply across SMS, WhatsApp, and Messenger.</div>
         <div class="modal-pills">
           <span class="modal-pill">33+ device signals</span>
           <span class="modal-pill">Sub-10s latency</span>
@@ -1764,218 +1753,46 @@ footer {
           <span class="modal-pill">3 platforms</span>
           <span class="modal-pill">SHAP explainability</span>
         </div>
-       </div>
+        <div class="modal-highlights">
+          <div class="modal-highlights-title">Key Highlights</div>
+          <div class="modal-highlight-item">Real-time context engine collecting 33+ device signals via native Android APIs</div>
+          <div class="modal-highlight-item">Hybrid ML+LLM pipeline: XGBoost confidence scores drive escalation to GPT-4o mini only when needed via SHAP-selected features, minimizing API cost while maintaining precision, recall, and F1-score</div>
+          <div class="modal-highlight-item">Privacy-preserving on-device Room (SQLite) storage — raw sensor data never leaves the device</div>
+        </div>
+      </div>
+
+      <div id="car-pipeline" class="modal-tab-panel">
+        <div class="modal-desc">Device signals → Feature extraction → XGBoost availability classifier → if confidence &gt; threshold, generate reply directly; else escalate to GPT-4o mini via SHAP-selected features.</div>
+        <div class="modal-highlights">
+          <div class="modal-highlights-title">Pipeline Steps</div>
+          <div class="modal-highlight-item">Signal collection: GPS, calendar, accelerometer, Wi-Fi, battery, notifications</div>
+          <div class="modal-highlight-item">Feature engineering: 33+ derived features from raw sensor data</div>
+          <div class="modal-highlight-item">XGBoost confidence scoring with SHAP-selected feature escalation</div>
+          <div class="modal-highlight-item">LLM fallback: GPT-4o mini invoked only when confidence is low, minimizing API cost</div>
+        </div>
+      </div>
+
       <div id="car-infra" class="modal-tab-panel">
-        <div class="modal-desc">Flask backend deployed on lightweight server. Android app communicates via REST. All ML inference runs server-side; <strong>personal data never leaves the device</strong> raw.</div>
+        <div class="modal-desc">Flask backend deployed on lightweight server. Android app communicates via REST. Privacy-preserving <strong>Room (SQLite)</strong> storage on-device ensures raw sensor data never leaves the device.</div>
         <div class="modal-highlights">
           <div class="modal-highlights-title">Deployment Details</div>
           <div class="modal-highlight-item">Flask REST API with async request handling and model inference endpoint</div>
           <div class="modal-highlight-item">Kotlin foreground service for continuous, low-power sensor monitoring</div>
           <div class="modal-highlight-item">Notification listener for cross-app message interception (SMS, WhatsApp, Messenger)</div>
-          <div class="modal-highlight-item">Model retrained periodically on aggregated, anonymized usage patterns</div>
+          <div class="modal-highlight-item">Room (SQLite) on-device storage keeps raw sensor data private</div>
         </div>
       </div>
 
       <div class="modal-techs" style="margin-top:24px;">
         <span class="modal-tech">Python</span>
-        <span class="modal-tech">Kotlin</span>
-        <span class="modal-tech">XGBoost</span>
-        <span class="modal-tech">SHAP</span>
-        <span class="modal-tech">GPT-4o mini</span>
         <span class="modal-tech">Flask</span>
-      </div>
-      <a href="https://github.com/Harshinikr" target="_blank" class="gh-link">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        View on GitHub</a>
-      <div id="car-pipeline" class="modal-tab-panel">
-        <div class="modal-desc">Device signals → Feature extraction → XGBoost availability classifier → if confidence &gt; threshold, generate reply directly; else forward to GPT-4o mini with context window.</div>
-        <div class="modal-highlights">
-          <div class="modal-highlights-title">Pipeline Steps</div>
-          <div class="modal-highlight-item">Signal collection: GPS, calendar, accelerometer, battery, notifications</div>
-          <div class="modal-highlight-item">Feature engineering: 33 derived features from raw sensor data</div>
-          <div class="modal-highlight-item">XGBoost: availability prediction with SHAP explainability</div>
-          <div class="modal-highlight-item">LLM fallback: GPT-4o mini with structured context prompt</div>
-        </div>
-      </div>
-   </div>
-   
-   
-      <div id="car-infra" class="modal-tab-panel">
-        <div class="modal-desc">Flask backend deployed on lightweight server. Android app communicates via REST. All ML inference runs server-side; personal data never leaves the device.</div>
-        <div class="modal-highlights">
-          <div class="modal-highlights-title">Deployment Details</div>
-          <div class="modal-highlight-item">Flask REST API with async request handling</div>
-          <div class="modal-highlight-item">Kotlin foreground service for continuous sensor monitoring</div>
-          <div class="modal-highlight-item">Notification listener for cross-app message interception</div>
-          <div class="modal-highlight-item">Model retrained periodically on aggregated (anonymized) usage patterns</div>
-        </div>
-      </div>
-
-      <div class="modal-techs" style="margin-top:24px;">
-        <span class="modal-tech">Python</span><span class="modal-tech">Kotlin</span>
-        <span class="modal-tech">XGBoost</span><span class="modal-tech">SHAP</span>
-        <span class="modal-tech">GPT-4o mini</span><span class="modal-tech">Flask</span>
-      </div>
-      <a href="https://github.com/Harshinikr" target="_blank" class="gh-link">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        View on GitHub
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- ===== MEDNLP MODAL ===== -->
-<div class="modal-overlay" id="m-mednlp" onclick="if(event.target===this)closeModal('mednlp')">
-  <div class="modal" style="position:relative;">
-    <button class="modal-close" onclick="closeModal('mednlp')" aria-label="Close">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-
-    <!-- SVG Banner: clinical/medical feel — warm deep teal + clinical white -->
-    <div class="modal-img">
-      <svg viewBox="0 0 820 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <linearGradient id="mnlp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#071a1a"/>
-            <stop offset="50%" stop-color="#0a2020"/>
-            <stop offset="100%" stop-color="#091518"/>
-          </linearGradient>
-          <linearGradient id="mnlp-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#0F9D94" stop-opacity="0.4"/>
-            <stop offset="100%" stop-color="#0F9D94" stop-opacity="0"/>
-          </linearGradient>
-          <linearGradient id="mnlp-glow2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#00bcd4" stop-opacity="0.2"/>
-            <stop offset="100%" stop-color="#00bcd4" stop-opacity="0"/>
-          </linearGradient>
-          <filter id="mnlp-blur"><feGaussianBlur stdDeviation="22"/></filter>
-        </defs>
-        <rect width="820" height="220" fill="url(#mnlp-bg)"/>
-        <!-- Background glows -->
-        <circle cx="140" cy="110" r="130" fill="url(#mnlp-glow)" filter="url(#mnlp-blur)"/>
-        <circle cx="680" cy="90" r="100" fill="url(#mnlp-glow2)" filter="url(#mnlp-blur)"/>
-        <!-- Scan lines (clinical feel) -->
-        <g stroke="#0F9D94" stroke-opacity="0.05" stroke-width="1">
-          <line x1="0" y1="36" x2="820" y2="36"/>
-          <line x1="0" y1="72" x2="820" y2="72"/>
-          <line x1="0" y1="108" x2="820" y2="108"/>
-          <line x1="0" y1="144" x2="820" y2="144"/>
-          <line x1="0" y1="180" x2="820" y2="180"/>
-        </g>
-        <!-- Clinical text representation (input) -->
-        <rect x="40" y="60" width="160" height="100" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-        <text x="52" y="82" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)">Clinical Note</text>
-        <line x1="52" y1="86" x2="185" y2="86" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-        <!-- Highlighted text spans -->
-        <rect x="52" y="92" width="55" height="9" rx="2" fill="#0F9D94" fill-opacity="0.3"/>
-        <text x="79" y="100" font-family="monospace" font-size="6.5" fill="#0F9D94" text-anchor="middle">DIAGNOSIS</text>
-        <rect x="52" y="106" width="72" height="9" rx="2" fill="#26a69a" fill-opacity="0.25"/>
-        <text x="88" y="114" font-family="monospace" font-size="6.5" fill="#26a69a" text-anchor="middle">MEDICATION</text>
-        <rect x="52" y="120" width="60" height="9" rx="2" fill="#00bcd4" fill-opacity="0.2"/>
-        <text x="82" y="128" font-family="monospace" font-size="6.5" fill="#00bcd4" text-anchor="middle">PROCEDURE</text>
-        <rect x="52" y="134" width="48" height="9" rx="2" fill="#80cbc4" fill-opacity="0.2"/>
-        <text x="76" y="142" font-family="monospace" font-size="6.5" fill="#80cbc4" text-anchor="middle">DOSAGE</text>
-        <!-- Arrow → BioBERT -->
-        <line x1="204" y1="110" x2="234" y2="110" stroke="#0F9D94" stroke-opacity="0.5" stroke-width="1.5"/>
-        <polygon points="234,106 240,110 234,114" fill="#0F9D94" fill-opacity="0.5"/>
-        <!-- BioBERT box -->
-        <rect x="242" y="82" width="90" height="56" rx="12" fill="#0F9D94" fill-opacity="0.14" stroke="#0F9D94" stroke-opacity="0.6" stroke-width="1.5"/>
-        <text x="287" y="106" font-family="monospace" font-size="9" fill="#0F9D94" text-anchor="middle" font-weight="bold">BioBERT</text>
-        <text x="287" y="120" font-family="monospace" font-size="7" fill="#0F9D94" fill-opacity="0.7" text-anchor="middle">fine-tuned</text>
-        <text x="287" y="131" font-family="monospace" font-size="6.5" fill="#0F9D94" fill-opacity="0.5" text-anchor="middle">i2b2 corpus</text>
-        <!-- Confidence gate -->
-        <line x1="333" y1="110" x2="363" y2="110" stroke="#0F9D94" stroke-opacity="0.4" stroke-width="1.5"/>
-        <polygon points="363,106 369,110 363,114" fill="#0F9D94" fill-opacity="0.4"/>
-        <!-- Gate diamond -->
-        <polygon points="372,102 386,110 372,118 358,110" fill="rgba(255,255,255,0.04)" stroke="#0F9D94" stroke-opacity="0.4" stroke-width="1"/>
-        <text x="372" y="114" font-family="monospace" font-size="6" fill="#0F9D94" fill-opacity="0.6" text-anchor="middle">conf</text>
-        <!-- High confidence path → output -->
-        <line x1="386" y1="110" x2="416" y2="110" stroke="#0F9D94" stroke-opacity="0.4" stroke-width="1.5"/>
-        <text x="401" y="105" font-family="monospace" font-size="6" fill="#0F9D94" fill-opacity="0.4" text-anchor="middle">≥0.72</text>
-        <!-- Low confidence path → Claude -->
-        <line x1="372" y1="118" x2="372" y2="148" stroke="#0F9D94" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="3 2"/>
-        <text x="372" y="142" font-family="monospace" font-size="6" fill="rgba(255,255,255,0.25)" text-anchor="middle">&lt;0.72</text>
-        <rect x="330" y="150" width="84" height="30" rx="8" fill="rgba(15,157,148,0.1)" stroke="#0F9D94" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="3 2"/>
-        <text x="372" y="169" font-family="monospace" font-size="8" fill="#0F9D94" fill-opacity="0.7" text-anchor="middle">Claude API</text>
-        <!-- Output box -->
-        <rect x="418" y="80" width="96" height="60" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="466" y="104" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.6)" text-anchor="middle">Structured</text>
-        <text x="466" y="116" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.6)" text-anchor="middle">JSON Output</text>
-        <!-- Entities in output -->
-        <text x="466" y="130" font-family="monospace" font-size="6" fill="#0F9D94" fill-opacity="0.6" text-anchor="middle">→ EHR / BigQuery</text>
-        <!-- Title area -->
-        <text x="588" y="84" font-family="'DM Serif Display',Georgia,serif" font-size="28" fill="white" fill-opacity="0.95" font-style="italic">MedNLP</text>
-        <text x="588" y="108" font-family="monospace" font-size="8" fill="#26a69a" letter-spacing="2">CLINICAL AI · NLP · GCP</text>
-        <text x="588" y="124" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="1">IN DEVELOPMENT</text>
-        <!-- Entity type badges -->
-        <rect x="588" y="134" width="60" height="18" rx="9" fill="#0F9D94" fill-opacity="0.15" stroke="#0F9D94" stroke-opacity="0.4" stroke-width="1"/>
-        <text x="618" y="147" font-family="monospace" font-size="7" fill="#0F9D94" text-anchor="middle">BioBERT NER</text>
-        <rect x="656" y="134" width="70" height="18" rx="9" fill="#00bcd4" fill-opacity="0.1" stroke="#00bcd4" stroke-opacity="0.35" stroke-width="1"/>
-        <text x="691" y="147" font-family="monospace" font-size="7" fill="#26a69a" text-anchor="middle">HIPAA-ALIGNED</text>
-        <!-- Top bar -->
-        <rect x="0" y="0" width="820" height="3" fill="#0F9D94" fill-opacity="0.6"/>
-        <rect x="600" y="0" width="220" height="3" fill="#00bcd4" fill-opacity="0.5"/>
-      </svg>
-    </div>
-
-    <div class="modal-body">
-      <div class="modal-tag">Clinical AI · NLP · In Development</div>
-      <div class="modal-title">MedNLP — Clinical Notes Extraction</div>
-
-      <div class="modal-tabs">
-        <button class="modal-tab active" onclick="switchTab(this,'mnlp-overview')">Overview</button>
-        <button class="modal-tab" onclick="switchTab(this,'mnlp-model')">Model</button>
-        <button class="modal-tab" onclick="switchTab(this,'mnlp-infra')">Infrastructure</button>
-      </div>
-
-      <div id="mnlp-overview" class="modal-tab-panel active">
-        <div class="modal-desc">Fine-tuned <strong>BioBERT</strong> extracts diagnoses, medications, procedures, and dosages from unstructured clinical notes. <strong>Claude API</strong> handles low-confidence edge cases with structured prompting. HIPAA-aligned, deployed on GCP Cloud Run.</div>
-        <div class="modal-pills">
-          <span class="modal-pill">BioBERT fine-tuned</span>
-          <span class="modal-pill">4 entity types</span>
-          <span class="modal-pill">HIPAA-aligned</span>
-          <span class="modal-pill">LLM fallback</span>
-          <span class="modal-pill">GCP deployed</span>
-        </div>
-        <div class="modal-highlights">
-          <div class="modal-highlights-title">Key Highlights</div>
-          <div class="modal-highlight-item">BioBERT fine-tuned on i2b2 clinical NLP datasets for medical named-entity recognition</div>
-          <div class="modal-highlight-item">Extracts DIAGNOSIS, MEDICATION, PROCEDURE, and DOSAGE entities in a single inference pass</div>
-          <div class="modal-highlight-item">Claude API fallback for ambiguous or low-confidence spans (threshold &lt; 0.72)</div>
-          <div class="modal-highlight-item">FastAPI backend with structured JSON output designed for EHR system integration</div>
-          <div class="modal-highlight-item">BigQuery stores all extraction results with patient-level audit trail for compliance</div>
-        </div>
-      </div>
-
-      <div id="mnlp-model" class="modal-tab-panel">
-        <div class="modal-desc"><strong>BioBERT base</strong> fine-tuned with a token classification head. Confidence thresholding routes uncertain entity spans to the <strong>Claude API</strong> for structured re-extraction with full medical context.</div>
-        <div class="modal-highlights">
-          <div class="modal-highlights-title">Model Details</div>
-          <div class="modal-highlight-item">Base: dmis-lab/biobert-v1.1 with custom NER classification head</div>
-          <div class="modal-highlight-item">Training: i2b2 2010 + 2012 clinical NLP challenge datasets</div>
-          <div class="modal-highlight-item">Entity types: DIAGNOSIS, MEDICATION, PROCEDURE, DOSAGE</div>
-          <div class="modal-highlight-item">Fallback threshold: confidence &lt; 0.72 → Claude API structured re-extraction</div>
-        </div>
-      </div>
-
-      <div id="mnlp-infra" class="modal-tab-panel">
-        <div class="modal-desc">Deployed on <strong>GCP Cloud Run</strong> with auto-scaling. BigQuery stores all extraction results with patient-level audit logs. De-identification pre-processing applied before any model inference.</div>
-        <div class="modal-highlights">
-          <div class="modal-highlights-title">Infrastructure</div>
-          <div class="modal-highlight-item">GCP Cloud Run — serverless, auto-scaling FastAPI container deployment</div>
-          <div class="modal-highlight-item">BigQuery for extraction storage with structured compliance audit trail</div>
-          <div class="modal-highlight-item">De-identification pipeline strips PHI before model inference (HIPAA-aligned)</div>
-          <div class="modal-highlight-item">Claude API integration via Anthropic SDK with structured JSON output schema</div>
-        </div>
-      </div>
-
-      <div class="modal-techs" style="margin-top:24px;">
-        <span class="modal-tech">Python</span>
-        <span class="modal-tech">BioBERT</span>
-        <span class="modal-tech">Claude API</span>
-        <span class="modal-tech">FastAPI</span>
-        <span class="modal-tech">GCP</span>
-        <span class="modal-tech">BigQuery</span>
+        <span class="modal-tech">Kotlin</span>
+        <span class="modal-tech">Android SDK</span>
+        <span class="modal-tech">XGBoost</span>
+        <span class="modal-tech">scikit-learn</span>
+        <span class="modal-tech">SHAP</span>
+        <span class="modal-tech">OpenAI GPT-4o mini</span>
+        <span class="modal-tech">Room (SQLite)</span>
       </div>
       <a href="https://github.com/Harshinikr" target="_blank" class="gh-link">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
