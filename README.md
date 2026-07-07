@@ -1,46 +1,50 @@
-Harshini K.R — Personal Website
-This repository contains my personal website built in 2026.
-It showcases my work, background, and technical strengths as a Software & ML Engineer specializing in cloud‑native systems, applied ML, and end‑to‑end delivery.
+# Harshini K.R — Personal Website
 
-👩‍💻 About Me
-I’m a Software & ML Engineer focused on building cloud‑native, distributed, and production‑ready systems with clarity, reliability, and clean architecture.
-My work spans applied ML, explainable AI, serverless pipelines, and client‑facing engineering — delivered in HIPAA/SOC‑2 regulated environments for Fortune 500 clients.
+This repository contains my personal website built in 2026.  
+It showcases my work, background, and technical strengths as a **Software & ML Engineer** specializing in **cloud‑native systems, applied ML, and end‑to‑end delivery**.
 
-Highlights
-MS Software Engineering @ Arizona State University (GPA 3.9)
+---
 
-Applied ML · SHAP Explainability · Hybrid ML+LLM Systems
+## 👩‍💻 About Me
 
-Cloud‑Native Architecture · Serverless AWS · Terraform IaC
+I’m a Software & ML Engineer focused on building **cloud‑native, distributed, and production‑ready systems** with clarity, reliability, and clean architecture.  
+My work spans **applied ML**, **explainable AI**, **serverless pipelines**, and **client‑facing engineering** — delivered in **HIPAA/SOC‑2 regulated environments** for Fortune 500 clients.
 
-Forward Deployed Engineering · End‑to‑End Delivery
+### Highlights
+- 🎓 MS Software Engineering @ Arizona State University (GPA 3.9)  
+- 🧠 Applied ML · SHAP Explainability · Hybrid ML+LLM Systems  
+- ☁️ Cloud‑Native Architecture · Serverless AWS · Terraform IaC  
+- 🚀 Forward Deployed Engineering · End‑to‑End Delivery  
+- 📍 Phoenix, AZ — Open to Relocate  
 
-Phoenix, AZ — Open to Relocate
+---
 
-🌐 Website Overview
+## 🌐 Website Overview
+
 The website includes:
 
-Professional introduction
-
-Skills and tech stack
-
-Featured AI/ML + cloud projects
-
-Experience and education
-
-Contact information
+- Professional introduction  
+- Skills and tech stack  
+- Featured AI/ML + cloud projects  
+- Experience and education  
+- Contact information  
 
 Designed to be simple, fast, and easy to navigate — reflecting my engineering philosophy.
 
-🚀 Tech Used
-HTML
+---
 
-CSS
+## 🚀 Tech Used
 
-JavaScript
+- HTML  
+- CSS  
+- JavaScript  
 
-📬 Contact
-Harshini K.R  
-Software Engineer · Applied AI/ML · Cloud‑Native Systems
+---
+
+## 📬 Contact
+
+**Harshini K.R**  
+Software Engineer · Applied AI/ML · Cloud‑Native Systems  
+
 LinkedIn: https://linkedin.com/in/harshini-k-r-2173191ab  
 Email: hkulanda@asu.edu
